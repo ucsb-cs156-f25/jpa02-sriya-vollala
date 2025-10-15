@@ -70,10 +70,13 @@ public class Team {
         if (obj == this) {
             return true;
         }
+
         if (!(obj instanceof Team)) {
             return false;
         }
+        
         Team other = (Team) obj;
+
         return this.name.equals(other.name) && this.members.equals(other.members);
     }
 
